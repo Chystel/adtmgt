@@ -1,0 +1,55 @@
+
+.quotation-wrapper{
+    padding: 80px 0;
+    background: #fff;
+}
+
+.quotation-box {
+    border: 1px solid #eee;
+    padding: 40px;
+}
+
+.quotation-box h5 {
+    font-size: 22px;
+}
+
+.how_often {
+    padding: 0px;
+    margin: 0;
+    margin-bottom: 25px;
+}
+
+.how_often li {
+    border: 1px solid #dddddd;
+    border-radius: 4px;
+    display: inline-block;
+    padding: 12px 10px;
+    text-align: center;
+    width: 145px;
+    margin-right: 19px;
+    cursor: pointer;
+}
+
+.how_often li:last-child {
+    margin-right: 0px;
+}
+
+.how_often a {
+    color: #8e8e8e;
+    font-size: 15px;
+    text-decoration-line: unset;
+}
+
+.how_often li.active a {
+    color: #fff;
+}
+
+.how_often li:hover {
+    color: #fff;
+    background-color: $theme_color;
+    border-color: $theme_color;
+}
+
+.how_often li:hover a {
+    color: #fff;
+}

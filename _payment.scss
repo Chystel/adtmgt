@@ -1,0 +1,175 @@
+.white-bg{
+    padding: 25px 50px 20px;
+}
+
+.payment_heading p{
+    font-weight: 600;
+    margin: 7px 0;
+}
+
+.payment_box .nav-tabs .nav-link{
+    color: #333;
+    width: 50%;
+    text-align: center;
+    border-radius: 0;
+    padding: 13px;    
+    &.active{
+        background-color: #eee;
+    }
+    &:hover{
+        background-color: $theme_color;
+        color: #fff;
+    }
+}
+
+.controls.register-controls label {
+    margin-bottom: 10px;
+}
+
+.small {
+    font-size: 14px;
+    color: #2684ff;
+    margin: 10px 0;
+}
+
+.register-btn {
+    margin: 20px 0;
+}
+
+.password_require ul {
+    list-style: inside;
+}
+
+.password_require ul li {
+    display: list-item;
+    margin: 7px 0;
+}
+
+// Payment Confirm
+
+
+.success-containter {
+    border: 1px solid #f0f0f0;
+    padding: 50px;
+    text-align: center;
+    position: relative;
+}
+
+.success-containter .logo {
+    position: absolute;
+    left: 45px;
+    top: 35px;
+}
+
+.success-containter .invoice-no {
+    position: absolute;
+    right: 35px;
+    top: 35px;
+}
+
+.success-containter .invoice-no p {
+    font-size: 15px;
+}
+
+.success-icon {
+    width: 50px;
+    height: 50px;
+    background: #15C445;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    border-radius: 50%;
+}
+
+.success-icon i {
+    font-size: 27px;
+    color: #fff;
+}
+
+.success-headline h6 {
+    color: #272b41;
+    font-size: 25px;
+    margin: 20px 0 10px;
+}
+
+.success-containter p {
+    font-size: 15px;
+    color: #757575;
+}
+
+.payment-wrap {
+    border: 1px solid #f0f0f0;
+    margin: 40px 0;
+}
+
+.payment-summary {
+    text-align: left;
+    padding: 22px;
+}
+
+.applicant-info {
+    margin-bottom: 15px;
+}
+
+.applicant-info p {
+    color: #272b41;
+    font-weight: 500;
+}
+
+.applicant-info p span {
+    opacity: .5;
+}
+
+
+.sche-info h6 {
+    color: #272b41;
+    font-size: 15px;
+}
+
+.sche-info .date {
+    margin-bottom: 15px;
+}
+
+
+.success-containter a.btn {
+    border: none;
+    padding: 10px 28px;
+    margin: 20px 0;
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+.success-containter a.btn:focus {
+    outline: none !important;
+}
+
+.success-containter a.btn {
+    margin-right: 15px;
+    margin-top: 35px;
+}
+
+.patient-dtl p {
+    margin: 15px 0 5px;
+}
+
+.form-check input[type=radio] {
+    width: 30px !important;
+}
+
+.payment_icon {
+    display: inline-block;
+    padding-left: 25px;
+    line-height: 1;
+    background: url(../img/icon/credit-card.png) no-repeat scroll 0 0 transparent;
+  }
+
+.payment_icon-2 {
+    display: inline-block;
+    padding-left: 80px;
+    line-height: 20px;
+    color: #fff;
+    background: url(../img/icon/paypal.png) no-repeat scroll 0 0 transparent;
+  }
+

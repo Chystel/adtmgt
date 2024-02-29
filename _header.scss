@@ -1,0 +1,275 @@
+/* Header Area 
+============== */
+
+.header-area{
+
+    .navigation {
+        padding: 0px 30px;
+        background: #fff;
+        height: 90px;
+        position: relative;
+        z-index: 9;
+		display: flex;
+		align-items: center;
+		@media #{$lg} {
+			padding: 0 5px;
+		}
+
+		@media #{$xs} {
+			padding: 0;
+		}
+    }
+
+    .header-inner-box {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;	
+		
+		.logo {
+			border-right: 1px solid #eee;
+			height: 90px;
+			display: flex;
+			align-items: center;
+			padding-right: 30px;
+			@media #{$md} {
+				border-right: 0;				
+			}
+			@media #{$xs} {
+				border-right: 0;				
+			}
+		}
+
+        .logo img {
+            margin-top: 5px;
+        }
+		
+        .phone-number-box {
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+
+            .icon i {
+                background: #E5F0EC;
+                font-size: 30px;
+                padding: 15px;
+                border-radius: 50%;
+            }
+            .phone {
+                padding-left: 15px;
+                p {
+                    margin: 0;
+                }
+            }
+			@media #{$md} {
+				display: none;
+			}
+
+			@media #{$xs} {
+				display: none;
+			}
+        }
+
+		@media #{$md} {
+			display: block;
+		}
+		@media #{$xs} {
+			display: block;
+		}
+             
+    }
+
+}
+
+.icon-wrapper {
+	display: flex;
+	border-left: 1px solid #eee;
+    height: 90px;
+    align-items: center;
+	@media #{$md} {
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	position: absolute;
+	top: 0;
+	right: 150px;			
+	border-left: 0;
+	} 			
+	@media #{$xs} {
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	position: absolute;
+	top: 0;
+	right: 100px;
+	border-left: 0;			
+	} 			
+	i{
+		font-size: 25px;
+		color: #333;
+		cursor: pointer;
+	}
+}
+
+.shopping-cart i {			
+	margin-left: 40px;
+	display: none;
+	@media #{$md} {
+	margin-left: 25px;	
+	}
+	@media #{$xs} {
+	margin-left: 25px;	
+	}
+}
+
+.search-icon {
+    margin-left: 60px;
+	@media #{$lg} {
+		margin-left: 20px;	
+		}
+}
+
+
+// Header # 02
+
+
+#header-2 .logo {
+	height: 90px;
+	display: flex;
+	align-items: center;
+	background: #E5F0EC;
+	@media #{$xs} {
+		background: transparent;
+		padding: 0;
+	}
+	@media #{$md} {
+		background: transparent;
+		padding: 0;
+	}
+}
+
+
+
+/* Main Menu 
+============== */
+
+.main-menu .navbar {
+	padding: 0;
+}
+
+.main-menu li.nav-item {
+	position: relative;
+	margin-right: 45px;
+}
+
+
+.main-menu .navbar-nav .nav-link {
+	font-size: 15px;
+	font-weight: 600;
+	display: block;
+	padding: 35px 0;
+}
+
+.main-menu .navbar-nav .nav-item .nav-link.active {
+	color: $theme_color;
+}
+
+.main-menu li.nav-item:hover > a {
+	color: $theme_color;
+}
+
+
+/*Dropdown Menu */
+
+.sub-menu {
+	position: absolute;
+	left: 0;
+	top: 120px;
+	width: 190px;
+	background-color: #fff;
+	opacity: 0;
+	visibility: hidden;
+	-webkit-transition: all 600ms ease;
+	transition: all 600ms ease;
+	z-index: 99;
+	-webkit-box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.05), -2px 0px 5px 1px rgba(0, 0, 0, 0.05);
+	box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.05), -2px 0px 5px 1px rgba(0, 0, 0, 0.05);
+}
+
+.sub-menu::after {
+	position: absolute;
+	content: "";
+	width: 100%;
+	height: 4px;
+	top: 0;
+	left: 0;
+	background: $primary_color;
+	visibility: hidden;
+	opacity: 0;
+}
+
+.main-menu li:hover .sub-menu {
+	opacity: 1;
+	visibility: visible;
+	top: 90px;
+}
+
+.main-menu li:hover .sub-menu::after {
+	opacity: 1;
+	visibility: visible;
+}
+
+.main-menu ul.sub-menu {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.main-menu .sub-menu li {
+	display: block;
+	border-bottom: 1px solid #eee;
+}
+
+.main-menu .sub-menu li:last-child {
+	border-bottom: none;
+}
+
+.main-menu .sub-menu li a {
+	display: block;
+	padding: 15px;
+	-webkit-transition: .3s;
+	transition: .3s;
+	color: $headline_color;
+}
+
+.main-menu .sub-menu li:hover > a {
+	background: $theme_color;
+    color: $white;
+}
+
+.dropdown-toggle::after {
+	display: none !important;
+}
+
+.navigation .navbar .navbar-nav .nav-item .sub-nav-toggler {
+	display: none;
+}
+
+.quatation-box {
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+	@media #{$xs} {		
+		display: none;
+	}
+	@media #{$md} {
+		display: none;		
+	}
+}
+
+.quatation-box a {
+    color: #fff;
+    font-weight: 500;
+}
+
